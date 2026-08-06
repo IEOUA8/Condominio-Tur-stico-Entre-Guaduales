@@ -1,26 +1,190 @@
 @import "tailwindcss";
 
+/* ==========================================================================
+   Entre Guaduales · Sistema de diseño
+   Concepto: Boutique natural contemporáneo
+   Paleta derivada del documento maestro (§13.2) + acento dorado del logo.
+   ========================================================================== */
+
+@theme {
+  /* Marca / naturaleza */
+  --color-forest-950: #0b211b;
+  --color-forest-900: #102a21;
+  --color-forest-800: #17382d;
+  --color-forest-700: #1f4838;
+  --color-guadua-700: #315d49;
+  --color-guadua-600: #3c6f57;
+  --color-sage-600: #5f7c60;
+  --color-sage-500: #789579;
+  --color-sage-400: #9ab29a;
+
+  /* Neutros cálidos */
+  --color-ivory-50: #f7f4ec;
+  --color-ivory-100: #efe9dc;
+  --color-sand-200: #ded0b5;
+  --color-sand-300: #d0bd9a;
+
+  /* Acentos */
+  --color-clay-600: #a86a3f;
+  --color-clay-500: #b87949;
+  --color-gold-500: #c6a15b;
+  --color-gold-400: #d4b678;
+
+  --color-ink-900: #15201c;
+
+  /* Verde de estado / éxito derivado de la marca */
+  --color-success-600: #3c6f57;
+
+  /* Tipografía */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
+
+  /* Radios y sombras suaves */
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --shadow-soft: 0 10px 40px -12px rgba(11, 33, 27, 0.28);
+  --shadow-card: 0 18px 50px -20px rgba(11, 33, 27, 0.45);
+
+  /* Contenedor ancho de lectura editorial */
+  --breakpoint-3xl: 100rem;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f4ec;
+  --foreground: #15201c;
+  --header-h: 4.75rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Selección */
+::selection {
+  background: var(--color-guadua-700);
+  color: var(--color-ivory-50);
+}
+
+/* Foco accesible visible (WCAG 2.2) */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 2px;
+  border-radius: 0.35rem;
+}
+
+/* Tipografía editorial de títulos */
+.font-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+/* Barra de scroll discreta */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--color-guadua-700) 55%, transparent);
+  border-radius: 999px;
+  border: 2px solid var(--background);
+}
+
+/* ========================= Glassmorphism (§13.4) ========================= */
+.glass {
+  background: color-mix(in oklab, var(--color-ivory-50) 72%, transparent);
+  backdrop-filter: blur(14px) saturate(1.15);
+  -webkit-backdrop-filter: blur(14px) saturate(1.15);
+  border: 1px solid color-mix(in oklab, white 55%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+.glass-dark {
+  background: color-mix(in oklab, var(--color-forest-950) 55%, transparent);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  border: 1px solid color-mix(in oklab, white 14%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+/* Fallback para navegadores/dispositivos sin backdrop-filter */
+@supports not ((backdrop-filter: blur(2px)) or (-webkit-backdrop-filter: blur(2px))) {
+  .glass {
+    background: color-mix(in oklab, var(--color-ivory-50) 94%, transparent);
+  }
+  .glass-dark {
+    background: color-mix(in oklab, var(--color-forest-950) 88%, transparent);
+  }
+}
+
+/* Overlay para fotografía (garantiza contraste sobre imágenes) */
+.photo-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 33, 27, 0.15) 0%,
+    rgba(11, 33, 27, 0.05) 35%,
+    rgba(11, 33, 27, 0.7) 100%
+  );
+  pointer-events: none;
+}
+
+/* ============================ Animaciones =============================== */
+@keyframes eg-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+.reveal.is-visible {
+  animation: eg-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Respeto por prefers-reduced-motion (§13.6) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+  }
+}
+
+/* Utilidad: número tabular para precios */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Contenedor de área segura iOS para navegación inferior (§12.2) */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
