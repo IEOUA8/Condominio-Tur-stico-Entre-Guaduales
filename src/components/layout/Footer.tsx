@@ -5,7 +5,7 @@ import {
   whatsappLink,
   DEFAULT_WHATSAPP_MESSAGE,
 } from "@/content/site";
-import { BrandLogo } from "@/components/layout/Brand";
+import { BrandLockup } from "@/components/layout/Brand";
 import { Icon, type IconName } from "@/components/ui/Icon";
 
 export function Footer() {
@@ -21,10 +21,10 @@ export function Footer() {
     <footer className="bg-forest-950 text-ivory-50/80">
       <div className="mx-auto w-full max-w-6xl px-5 pb-28 pt-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          {/* Marca + descripción */}
-          <div>
-            <BrandLogo className="max-h-24 w-auto" />
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-ivory-50/70">
+          {/* Marca + descripción (centrado en móvil, izquierda en desktop) */}
+          <div className="text-center lg:text-left">
+            <BrandLockup tone="gold" size="md" orientation="responsive" />
+            <p className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-ivory-50/70 lg:mx-0">
               Condominio turístico boutique entre la guadua y la naturaleza.
               Experiencias privadas para crear recuerdos inolvidables en pareja,
               familia o con amigos.
