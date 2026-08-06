@@ -23,7 +23,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           {/* Marca + descripción (centrado en móvil, izquierda en desktop) */}
           <div className="text-center lg:text-left">
-            <BrandLockup tone="gold" size="md" orientation="responsive" />
+            <BrandLockup tone="gold" size="lg" />
             <p className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-ivory-50/70 lg:mx-0">
               Condominio turístico boutique entre la guadua y la naturaleza.
               Experiencias privadas para crear recuerdos inolvidables en pareja,

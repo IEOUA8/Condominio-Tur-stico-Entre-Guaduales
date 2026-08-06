@@ -46,7 +46,7 @@ export function Header() {
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-6 lg:px-8">
         <Link href="/" aria-label="Entre Guaduales, inicio" className="shrink-0">
-          <BrandLockup tone={dark ? "light" : "dark"} sublabel="Condominio turístico" size="sm" />
+          <BrandLockup tone={dark ? "light" : "dark"} size="sm" adaptive priority />
         </Link>
 
         <nav aria-label="Navegación principal" className="hidden items-center gap-0.5 lg:flex">
@@ -134,7 +134,7 @@ function MobileMenu({
       {/* Barra superior del panel: marca + cerrar */}
       <div className="flex items-center justify-between border-b border-white/10 px-5 pb-4 pt-[max(1rem,env(safe-area-inset-top))]">
         <Link href="/" onClick={onClose} aria-label="Entre Guaduales, inicio">
-          <BrandLockup tone="light" sublabel="Condominio turístico" size="sm" />
+          <BrandLockup tone="light" size="sm" />
         </Link>
         <button
           type="button"

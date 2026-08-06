@@ -28,7 +28,7 @@ export function OrganizationJsonLd() {
         description:
           "Condominio turístico boutique con cabañas privadas, jacuzzi, zona BBQ, fogatero y naturaleza. Experiencias para 2 a 26 huéspedes.",
         image: `${site.url}/images/exteriores/panoramica-lago.jpg`,
-        logo: `${site.url}/brand/logo-mark.png`,
+        logo: `${site.url}/brand/logo-header.png`,
         slogan: site.promise,
         petsAllowed: true,
         amenityFeature: [
