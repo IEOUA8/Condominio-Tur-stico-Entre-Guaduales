@@ -29,8 +29,7 @@ export const faqs: Faq[] = [
   {
     category: "Horarios",
     q: "¿Cuáles son los horarios de check-in y check-out?",
-    a: "Los horarios de ingreso y salida se confirman al coordinar la reserva.",
-    pending: true,
+    a: "El check-in es a partir de las 3:00 p. m. y el check-out hasta las 12:00 m. (mediodía).",
   },
   {
     category: "Mascotas",
@@ -45,12 +44,12 @@ export const faqs: Faq[] = [
   {
     category: "Jacuzzi",
     q: "¿Cómo funciona el jacuzzi?",
-    a: "El jacuzzi es privado y funciona por encendidos de tres horas con apagado automático. La temperatura máxima permitida es de 35 °C. Es de uso para adultos; los menores deben estar acompañados. No se permite consumir alimentos dentro ni el ingreso de mascotas.",
+    a: "Cada cabaña tiene jacuzzi privado con capacidad para 8 adultos (1.300 litros). El llenado toma cerca de una hora con asistencia del anfitrión y se habilita por 3 horas por encendido con apagado automático. La temperatura máxima es de 35 °C y el uso es de una vez por día (excepto el día de salida). Es para adultos; los menores deben estar acompañados. No se permiten alimentos ni mascotas dentro.",
   },
   {
     category: "Transporte",
     q: "¿Ofrecen servicio de transporte?",
-    a: "Sí, contamos con servicio de transporte con costo adicional, que se coordina con anticipación al momento de la reserva.",
+    a: "Sí. El transporte se coordina directamente con el anfitrión, según recorridos programados con antelación, y tiene un costo adicional.",
   },
   {
     category: "Parqueadero",
@@ -75,14 +74,17 @@ export const faqs: Faq[] = [
   {
     category: "Pagos",
     q: "¿Qué formas de pago aceptan?",
-    a: "Los métodos de pago autorizados se informan al coordinar la reserva por los canales oficiales. Realiza pagos únicamente por estos canales y verifica siempre el titular y tu número de solicitud.",
-    pending: true,
+    a: "Aceptamos transferencia bancaria. Los datos de la cuenta oficial se comparten al coordinar tu reserva por los canales oficiales. Realiza pagos únicamente por esos canales y verifica siempre el titular y tu número de solicitud antes de transferir.",
+  },
+  {
+    category: "Pagos",
+    q: "¿Se requiere depósito de garantía?",
+    a: "Sí, un depósito de garantía de $500.000 que se devuelve al día siguiente del check-out al titular de la reserva.",
   },
   {
     category: "Cancelaciones",
     q: "¿Puedo cancelar o reprogramar?",
-    a: "Las condiciones de cancelación y reprogramación se detallan en nuestra política y se confirman al momento de la reserva.",
-    pending: true,
+    a: "Sí. Con la cancelación realizada al menos 24 horas antes del check-in (3:00 p. m.) se devuelve el 100%. En ese caso, a tu elección, reembolsamos el valor o reprogramamos la estadía según disponibilidad.",
   },
   {
     category: "Daños",

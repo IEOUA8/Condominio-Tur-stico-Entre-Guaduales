@@ -19,9 +19,9 @@ const breadcrumbs = [
 ];
 
 const info: { icon: IconName; title: string; text: string; pending?: boolean }[] = [
-  { icon: "mapPin", title: "Región", text: `${site.contact.region} · ${site.contact.city}`, pending: true },
-  { icon: "info", title: "Dirección exacta", text: "Se comparte al confirmar la reserva, por privacidad y seguridad." },
-  { icon: "van", title: "Transporte", text: "Servicio disponible con costo adicional, coordinado con anticipación." },
+  { icon: "mapPin", title: "Región", text: `${site.contact.region} · ${site.contact.city}` },
+  { icon: "info", title: "Dirección exacta", text: "La dirección detallada de la finca se comparte al confirmar la reserva." },
+  { icon: "van", title: "Transporte", text: "Se coordina directamente con el anfitrión, según recorridos programados, con costo adicional." },
   { icon: "car", title: "Parqueadero", text: "Parqueadero privado dentro de la propiedad." },
 ];
 
@@ -62,9 +62,16 @@ export default function UbicacionPage() {
                   </li>
                 ))}
               </ul>
-              <Button href="/reservar" variant="primary" className="mt-7" icon="arrowRight">
-                Consultar disponibilidad
-              </Button>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Button href="/reservar" variant="primary" icon="arrowRight">
+                  Consultar disponibilidad
+                </Button>
+                {site.contact.mapLink && (
+                  <Button href={site.contact.mapLink} variant="secondary" icon="arrowUpRight">
+                    Ver en Google Maps
+                  </Button>
+                )}
+              </div>
             </div>
 
             {/* Mapa embebido o placeholder */}

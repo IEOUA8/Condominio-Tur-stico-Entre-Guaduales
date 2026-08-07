@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalShell, H2, P, UL, Pending } from "@/components/legal/LegalShell";
+import { LegalShell, H2, P, UL } from "@/components/legal/LegalShell";
 
 export const metadata: Metadata = {
   title: "Términos y condiciones",
@@ -15,7 +15,7 @@ export default function TerminosPage() {
       slug="terminos-y-condiciones"
       title="Términos y condiciones de reserva"
       subtitle="Condiciones aplicables a las solicitudes y reservas de estadía."
-      updatedAt="por definir"
+      updatedAt="7 de agosto de 2026"
     >
       <H2>1. Solicitud vs. reserva confirmada</H2>
       <P>
@@ -31,11 +31,12 @@ export default function TerminosPage() {
         combinación de cabañas.
       </P>
 
-      <H2>3. Pagos</H2>
+      <H2>3. Pagos y depósito</H2>
       <P>
-        Los métodos de pago autorizados y el porcentaje inicial o depósito se informan al coordinar la reserva:{" "}
-        <Pending>[métodos de pago por confirmar]</Pending>. Realiza pagos únicamente por los canales oficiales y
-        verifica el titular y tu número de solicitud antes de transferir.
+        Aceptamos pago por transferencia bancaria; los datos de la cuenta oficial se comparten al coordinar
+        la reserva. Se requiere un depósito de garantía de $500.000, que se devuelve al día siguiente del
+        check-out al titular de la reserva. Realiza pagos únicamente por los canales oficiales y verifica el
+        titular y tu número de solicitud antes de transferir.
       </P>
 
       <H2>4. Capacidad y huéspedes</H2>
@@ -54,8 +55,7 @@ export default function TerminosPage() {
 
       <H2>5. Check-in y check-out</H2>
       <P>
-        Los horarios de ingreso y salida se confirman al coordinar la reserva:{" "}
-        <Pending>[horarios por confirmar]</Pending>.
+        El check-in es a partir de las 3:00 p. m. y el check-out hasta las 12:00 m. (mediodía).
       </P>
 
       <H2>6. Daños y responsabilidad</H2>
@@ -66,7 +66,9 @@ export default function TerminosPage() {
 
       <H2>7. Cancelaciones</H2>
       <P>
-        Las condiciones de cancelación y reprogramación se detallan en la{" "}
+        Con la cancelación realizada al menos 24 horas antes del check-in (3:00 p. m.) se devuelve el 100%.
+        En ese caso, a elección del huésped, se reembolsa el valor o se reprograma la estadía según
+        disponibilidad. Más detalles en la{" "}
         <Link href="/politica-de-cancelacion" className="font-medium text-guadua-700 underline">
           política de cancelación
         </Link>

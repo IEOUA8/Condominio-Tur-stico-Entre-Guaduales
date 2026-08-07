@@ -148,18 +148,16 @@ export default async function ExperienceDetailPage({
                   />
                   <InfoStat icon="hotTub" label="Jacuzzi" value="Privado" />
                 </div>
-                {exp.pendingUnitInfo.length > 0 && (
-                  <div className="mt-5 rounded-2xl border border-sand-300/60 bg-sand-200/25 p-5">
-                    <p className="flex items-center gap-2 text-sm font-medium text-clay-600">
-                      <Icon name="info" size={16} />
-                      Detalles en confirmación
+                {exp.distribution.length > 0 && (
+                  <div className="mt-5 rounded-2xl border border-forest-900/10 bg-ivory-50 p-5">
+                    <p className="flex items-center gap-2 text-sm font-semibold text-forest-900">
+                      <Icon name="cabin" size={17} className="text-guadua-700" />
+                      Distribución
                     </p>
-                    <p className="mt-1.5 text-sm text-forest-900/70">
-                      Estamos verificando estos datos con el anfitrión para publicarlos con precisión:
-                    </p>
-                    <ul className="mt-3 flex flex-wrap gap-2">
-                      {exp.pendingUnitInfo.map((info) => (
-                        <li key={info} className="rounded-full bg-white/70 px-3 py-1 text-xs text-forest-800">
+                    <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                      {exp.distribution.map((info) => (
+                        <li key={info} className="flex items-start gap-2 text-sm text-forest-900/80">
+                          <Icon name="check" size={15} className="mt-0.5 shrink-0 text-guadua-700" />
                           {info}
                         </li>
                       ))}

@@ -30,10 +30,9 @@ export function LegalShell({
           <div className="mb-6 flex items-start gap-3 rounded-2xl border border-clay-500/25 bg-clay-500/8 p-4 text-sm text-forest-900/80">
             <Icon name="info" size={20} className="mt-0.5 shrink-0 text-clay-600" />
             <p>
-              <strong className="font-semibold text-forest-900">Documento en preparación.</strong> Este texto es
-              un borrador de referencia. La versión definitiva debe ser validada por el cliente y su asesoría
-              jurídica antes de la publicación, e incluir los datos del responsable y el Registro Nacional de
-              Turismo.
+              <strong className="font-semibold text-forest-900">Contenido informativo.</strong> Incluye los datos
+              y políticas confirmados por el prestador (responsable, RNT, pagos, horarios y cancelación).
+              Recomendamos una validación jurídica final del texto antes de considerarlo definitivo.
             </p>
           </div>
 

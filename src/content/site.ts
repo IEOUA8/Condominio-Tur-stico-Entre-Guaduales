@@ -47,40 +47,49 @@ export const site = {
     email: "admin@condominioturisticoentreguaduales.com", // ✅ Confirmado por el cliente
     emailIsPlaceholder: false,
 
-    // Ubicación (§7.11): el documento pide no publicar dirección exacta hasta
-    // confirmación. Mostramos zona general marcada como placeholder.
-    city: "Quindío, Colombia", // ⚠️ PLACEHOLDER (región probable — confirmar)
-    region: "Eje Cafetero",
-    addressPublic: "Ubicación exacta compartida al confirmar la reserva.",
-    locationIsPlaceholder: P,
-    mapEmbedUrl: "", // ⚠️ PLACEHOLDER: pegar URL de Google Maps embebido al confirmar
+    // Ubicación confirmada por el cliente (Oriente Antioqueño).
+    city: "Rionegro, Antioquia",
+    region: "Oriente Antioqueño",
+    addressPublic:
+      "Oriente Antioqueño, cerca de Rionegro (Vía a Galicia). La dirección detallada se comparte al confirmar la reserva.",
+    locationIsPlaceholder: false,
+    mapEmbedUrl: "https://www.google.com/maps?q=Condominio+Tur%C3%ADstico+Entre+Guaduales&output=embed",
+    mapLink: "https://maps.app.goo.gl/ZziFaNUXC2pVto2B8",
   },
 
-  /* ----- Registro / legales (⚠️ PLACEHOLDERS) ----- */
+  /* ----- Registro / legales (✅ confirmado por el cliente) ----- */
   legal: {
-    rnt: "", // ⚠️ PLACEHOLDER: Registro Nacional de Turismo (§23)
-    rntIsPlaceholder: P,
-    responsibleName: "", // ⚠️ PLACEHOLDER: razón social o responsable
-    documentId: "", // ⚠️ PLACEHOLDER: NIT / documento
-    privacyEmail: "", // ⚠️ PLACEHOLDER: correo de privacidad
-    legalIsPlaceholder: P,
+    rnt: "220283",
+    rntIsPlaceholder: false,
+    responsibleName: "Rubén Darío Vargas Echeverri",
+    documentId: "C.C. 15.444.992",
+    // El cliente escribió "adminin@condomnio…" (con typos); se usa el correo oficial.
+    privacyEmail: "admin@condominioturisticoentreguaduales.com",
+    legalIsPlaceholder: false,
   },
 
-  /* ----- Operación (⚠️ PLACEHOLDERS) ----- */
+  /* ----- Operación (✅ confirmado por el cliente) ----- */
   operations: {
-    checkIn: "Por confirmar", // ⚠️ PLACEHOLDER
-    checkOut: "Por confirmar", // ⚠️ PLACEHOLDER
-    responseTime: "", // ⚠️ PLACEHOLDER: no prometer tiempos sin confirmar (§7.13)
-    paymentMethods: [] as string[], // ⚠️ PLACEHOLDER
-    depositPolicy: "Por confirmar", // ⚠️ PLACEHOLDER
+    checkIn: "3:00 p. m.",
+    checkOut: "12:00 m. (mediodía)",
+    responseTime: "", // ⚠️ PENDIENTE: el cliente no definió un tiempo de respuesta
+    // Los datos de la cuenta NO se publican (se comparten en privado al reservar).
+    paymentMethods: ["Transferencia bancaria (Bancolombia)"],
+    depositAmount: 500_000,
+    depositPolicy:
+      "Depósito de garantía de $500.000, devuelto al día siguiente del check-out al titular de la reserva.",
+    cancellationPolicy:
+      "Cancelación con devolución del 100% hasta 24 horas antes del check-in (3:00 p. m.). Con la cancelación oportuna, a elección del huésped se reembolsa el valor o se reprograma la estadía según disponibilidad.",
+    transport:
+      "El servicio de transporte se coordina directamente con el anfitrión, según recorridos programados con antelación.",
   },
 
-  /* ----- Redes sociales (⚠️ PLACEHOLDERS) ----- */
+  /* ----- Redes sociales (parcial — confirmar handles marcados) ----- */
   social: {
-    instagram: "", // ⚠️ PLACEHOLDER
-    facebook: "", // ⚠️ PLACEHOLDER
-    airbnb: "", // ⚠️ PLACEHOLDER
-    google: "", // ⚠️ PLACEHOLDER perfil de Google Business
+    instagram: "https://www.instagram.com/cond_turistico_entre_guaduales", // ⚠️ confirmar handle exacto
+    facebook: "", // ⚠️ PENDIENTE: falta la URL exacta de la página
+    airbnb: "https://www.airbnb.com.co/h/casa-finca-un-oasis-de-vida",
+    google: "https://share.google/hHCtB6T2wZzRoRSu8",
   },
 
   /* Capacidad global verificada por el documento (§2.3, §7.3). */
@@ -92,16 +101,9 @@ export const site = {
 
 /** Registro legible de todo lo pendiente por confirmar (para el equipo). */
 export const PENDING: { key: PendingKey; label: string; where: string }[] = [
-  { key: "whatsapp", label: "Número de WhatsApp oficial", where: "site.contact.whatsapp" },
-  { key: "phone", label: "Teléfono de contacto", where: "site.contact.phone" },
-  { key: "email", label: "Correo oficial de reservas", where: "site.contact.email" },
-  { key: "location", label: "Ubicación exacta + mapa embebido", where: "site.contact.mapEmbedUrl" },
-  { key: "rnt", label: "Registro Nacional de Turismo (RNT)", where: "site.legal.rnt" },
-  { key: "legalEntity", label: "Razón social / NIT / correo de privacidad", where: "site.legal" },
-  { key: "checkInOut", label: "Horarios de check-in y check-out", where: "site.operations" },
-  { key: "paymentMethods", label: "Métodos de pago autorizados", where: "site.operations.paymentMethods" },
+  { key: "phone", label: "Teléfono fijo/adicional (¿es el mismo del WhatsApp?)", where: "site.contact.phone" },
   { key: "responseTime", label: "Tiempo de respuesta comprometido", where: "site.operations.responseTime" },
-  { key: "social", label: "Enlaces de redes sociales", where: "site.social" },
+  { key: "social", label: "URL de Facebook + confirmar handles de Instagram/TikTok", where: "site.social" },
 ];
 
 /* --------------------------- Navegación (§6.1) --------------------------- */

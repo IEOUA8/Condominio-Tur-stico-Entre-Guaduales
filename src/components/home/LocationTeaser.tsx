@@ -20,7 +20,7 @@ export function LocationTeaser() {
             </p>
 
             <ul className="mt-6 space-y-3">
-              <LocationRow icon="mapPin" label={`Región: ${site.contact.region}`} pending />
+              <LocationRow icon="mapPin" label={`${site.contact.region} · ${site.contact.city}`} />
               <LocationRow icon="info" label="Ubicación exacta compartida al confirmar la reserva" />
               <LocationRow icon="van" label="Servicio de transporte disponible con costo adicional" />
             </ul>
@@ -45,10 +45,10 @@ export function LocationTeaser() {
                 <Icon name="mapPin" size={26} />
               </span>
               <p className="mt-4 max-w-xs text-sm font-medium text-forest-900">
-                Mapa interactivo disponible al confirmar la ubicación exacta.
+                Oriente Antioqueño, cerca de Rionegro. Consulta el mapa y cómo llegar.
               </p>
-              <span className="mt-2 rounded-full bg-white/70 px-3 py-1 text-xs text-clay-600">
-                Contenido pendiente de confirmación
+              <span className="mt-2 rounded-full bg-white/70 px-3 py-1 text-xs text-guadua-700">
+                Ver ubicación
               </span>
             </div>
           </div>

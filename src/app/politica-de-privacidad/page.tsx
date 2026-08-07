@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LegalShell, H2, P, UL, Pending } from "@/components/legal/LegalShell";
+import { LegalShell, H2, P, UL } from "@/components/legal/LegalShell";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -15,14 +15,18 @@ export default function PrivacidadPage() {
       slug="politica-de-privacidad"
       title="Política de privacidad y tratamiento de datos"
       subtitle="Cómo recolectamos, usamos y protegemos tu información personal."
-      updatedAt="por definir"
+      updatedAt="7 de agosto de 2026"
     >
       <H2>1. Responsable del tratamiento</H2>
       <P>
         El responsable del tratamiento de los datos personales es{" "}
-        <Pending>[razón social o nombre del responsable]</Pending>, identificado con{" "}
-        <Pending>[NIT / documento]</Pending>. Para asuntos de privacidad puedes escribir a{" "}
-        <Pending>[correo de privacidad]</Pending>.
+        <strong className="text-forest-900">{site.legal.responsibleName}</strong> ({site.legal.documentId}),
+        prestador de servicios turísticos con Registro Nacional de Turismo No. {site.legal.rnt}. Para
+        asuntos de privacidad puedes escribir a{" "}
+        <a href={`mailto:${site.legal.privacyEmail}`} className="font-medium text-guadua-700 underline">
+          {site.legal.privacyEmail}
+        </a>
+        .
       </P>
 
       <H2>2. Datos que recolectamos</H2>

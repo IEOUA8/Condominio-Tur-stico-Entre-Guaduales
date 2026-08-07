@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LegalShell, H2, P, Pending } from "@/components/legal/LegalShell";
+import { LegalShell, H2, P } from "@/components/legal/LegalShell";
 
 export const metadata: Metadata = {
   title: "Política de cancelación",
@@ -14,24 +14,24 @@ export default function CancelacionPage() {
       slug="politica-de-cancelacion"
       title="Política de cancelación y reprogramación"
       subtitle="Condiciones aplicables a la cancelación y el cambio de fechas."
-      updatedAt="por definir"
+      updatedAt="7 de agosto de 2026"
     >
       <H2>1. Cancelación</H2>
       <P>
-        Las condiciones y plazos de cancelación, así como los eventuales reembolsos, se definen con el cliente y
-        se comunican al confirmar la reserva: <Pending>[condiciones de cancelación por confirmar]</Pending>.
+        Con la cancelación realizada al menos 24 horas antes del check-in (3:00 p. m.) se devuelve el 100%
+        del valor pagado.
       </P>
 
       <H2>2. Reprogramación</H2>
       <P>
-        La posibilidad de reprogramar fechas, sujeta a disponibilidad, y sus condiciones se informan al coordinar
-        la reserva: <Pending>[condiciones de reprogramación por confirmar]</Pending>.
+        Con la cancelación oportuna (al menos 24 horas antes del check-in), a elección del huésped se
+        reembolsa el valor o se reprograma la estadía según disponibilidad.
       </P>
 
-      <H2>3. Depósitos</H2>
+      <H2>3. Depósito de garantía</H2>
       <P>
-        Si aplica un depósito o anticipo, su valor y las condiciones para su devolución se detallan al momento de
-        la reserva: <Pending>[política de depósitos por confirmar]</Pending>.
+        Se requiere un depósito de garantía de $500.000, que se devuelve al día siguiente del check-out al
+        titular de la reserva.
       </P>
 
       <H2>4. Cómo solicitar un cambio</H2>

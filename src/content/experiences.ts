@@ -1,8 +1,7 @@
 /* ==========================================================================
    CATÁLOGO DE EXPERIENCIAS (§8)
    Tarifas y capacidades tomadas literalmente del documento maestro.
-   La info de unidad (habitaciones, camas, baños, área) NO está confirmada:
-   se lista en `pendingUnitInfo` y se muestra como "en confirmación" (§9.2).
+   Distribución de cabañas confirmada por el cliente (agosto 2026).
    ========================================================================== */
 
 export type Photo = { src: string; alt: string };
@@ -33,8 +32,8 @@ export type Experience = {
   gallery: Photo[];
 
   amenities: string[];
-  /** Datos de la unidad pendientes de confirmar (§9.2). */
-  pendingUnitInfo: string[];
+  /** Distribución real de la unidad/cabañas (confirmada por el cliente). */
+  distribution: string[];
 
   ctaLabel: string;
   accent: "clay" | "guadua" | "gold" | "forest" | "sage";
@@ -69,7 +68,7 @@ export const experiences: Experience[] = [
       { src: "/images/momentos/luna-sendero.jpg", alt: "Sendero iluminado en la noche" },
     ],
     amenities: ["Cabaña privada dotada", "Jacuzzi privado", "Zona BBQ", "Fogatero", "Parqueadero", "Senderos ecológicos", "Zonas verdes", "Lago"],
-    pendingUnitInfo: ["Número de habitaciones", "Tipo y número de camas", "Número de baños", "Área aproximada", "Agua caliente y ventilación", "Conectividad"],
+    distribution: ["Cabaña privada para dos", "Habitación principal con cama Queen (1.60 × 1.90)", "Baño completo y ducha exterior", "Jacuzzi privado", "Zona BBQ y fogatero propios", "Parqueadero privado"],
     ctaLabel: "Planear una escapada para dos",
     accent: "clay",
   },
@@ -101,7 +100,7 @@ export const experiences: Experience[] = [
       { src: "/images/exteriores/jardin-flores.jpg", alt: "Jardín florido con zonas verdes para compartir" },
     ],
     amenities: ["Cabaña privada dotada", "Jacuzzi privado", "Zona BBQ", "Fogatero", "Parqueadero", "Senderos ecológicos", "Zonas verdes", "Lago", "Ambientes de descanso"],
-    pendingUnitInfo: ["Número de habitaciones", "Distribución de camas", "Número de baños", "Área aproximada", "Capacidad de parqueadero", "Equipamiento de cocina"],
+    distribution: ["3 habitaciones", "8 camas: Queen, camas tarima y literas semidobles", "2 baños completos y ducha exterior", "4 parqueaderos (cubiertos y descubiertos)", "Jacuzzi privado, zona BBQ y fogatero"],
     ctaLabel: "Consultar fechas para mi familia",
     accent: "guadua",
   },
@@ -133,7 +132,7 @@ export const experiences: Experience[] = [
       { src: "/images/exteriores/bbq-zona.jpg", alt: "Zona BBQ cubierta en el exterior" },
     ],
     amenities: ["Cabaña privada dotada", "Jacuzzi privado", "Zona BBQ", "Fogatero", "Parqueadero", "Senderos ecológicos", "Zonas verdes", "Lago", "Ambientes de descanso"],
-    pendingUnitInfo: ["Número de habitaciones", "Distribución exacta de camas y literas", "Número de baños", "Área aproximada", "Equipamiento de cocina", "Conectividad y televisión"],
+    distribution: ["3 habitaciones (1 principal + 2 auxiliares)", "10 camas: 1 Queen, 1 tarima y 4 literas semidobles", "2½ baños (2 completos + medio baño social) y ducha exterior", "5 parqueaderos (cubierto y descubiertos)", "Jacuzzi privado, zona BBQ y fogatero"],
     ctaLabel: "Descubrir la experiencia Sirirí",
     accent: "sage",
   },
@@ -165,7 +164,7 @@ export const experiences: Experience[] = [
       { src: "/images/momentos/fogatero-personas.jpg", alt: "Grupo compartiendo alrededor del fogatero de noche" },
     ],
     amenities: ["Varias cabañas combinadas", "Jacuzzi", "Zona BBQ", "Fogatero", "Parqueadero privado", "Senderos ecológicos", "Zonas verdes", "Lago", "Áreas comunes"],
-    pendingUnitInfo: ["Combinación de cabañas disponible", "Distribución total de habitaciones y camas", "Número de baños", "Capacidad exacta de parqueadero", "Reglas de áreas compartidas"],
+    distribution: ["2 cabañas combinadas (según disponibilidad)", "Hasta 6 habitaciones y 18 camas", "4 baños completos y duchas exteriores", "Hasta 9 parqueaderos", "Jacuzzi, zona BBQ y fogatero en cada cabaña", "Áreas privadas e independientes por familia"],
     ctaLabel: "Solicitar una propuesta para dos familias",
     accent: "forest",
   },
@@ -197,7 +196,7 @@ export const experiences: Experience[] = [
       { src: "/images/exteriores/jardin-flores.jpg", alt: "Jardines florecidos del condominio" },
     ],
     amenities: ["Condominio completo", "Todas las cabañas", "Jacuzzi", "Zona BBQ", "Fogatero", "Parqueadero privado", "Senderos ecológicos", "Zonas verdes", "Lago", "Ambientes de descanso"],
-    pendingUnitInfo: ["Número total de cabañas y su distribución", "Camas y baños totales", "Área total del predio", "Capacidad de parqueadero", "Reglas para celebraciones permitidas"],
+    distribution: ["Las 3 cabañas: Sirirí, Barranquero y Guacharaca", "9 habitaciones y 26 camas en total", "6½ baños + 3 duchas exteriores", "13 parqueaderos", "3 jacuzzis, 3 zonas BBQ y 3 fogateros", "Uso completo y privado del condominio"],
     ctaLabel: "Reservar el condominio completo",
     accent: "gold",
   },
