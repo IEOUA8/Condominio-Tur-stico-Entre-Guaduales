@@ -36,10 +36,10 @@ export const site = {
 
   /* ----- Contacto (⚠️ PLACEHOLDERS: confirmar con el cliente) ----- */
   contact: {
-    // Solo dígitos con código de país para enlaces wa.me. ⚠️ PLACEHOLDER
-    whatsapp: "573000000000",
-    whatsappDisplay: "+57 300 000 0000",
-    whatsappIsPlaceholder: P,
+    // Solo dígitos con código de país para enlaces wa.me. ✅ Confirmado por el cliente
+    whatsapp: "573116791517",
+    whatsappDisplay: "+57 311 679 1517",
+    whatsappIsPlaceholder: false,
 
     phone: "+57 300 000 0000", // ⚠️ PLACEHOLDER
     phoneIsPlaceholder: P,
