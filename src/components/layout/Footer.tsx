@@ -12,6 +12,7 @@ export function Footer() {
   const year = new Date().getFullYear();
   const socialLinks: { key: string; href: string; icon: IconName; label: string }[] = [
     { key: "instagram", href: site.social.instagram, icon: "instagram", label: "Instagram" },
+    { key: "threads", href: site.social.threads, icon: "threads", label: "Threads" },
     { key: "facebook", href: site.social.facebook, icon: "facebook", label: "Facebook" },
     { key: "google", href: site.social.google, icon: "google", label: "Google" },
   ];

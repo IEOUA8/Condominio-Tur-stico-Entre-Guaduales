@@ -23,6 +23,7 @@ export type IconName =
   | "shield"
   | "instagram"
   | "facebook"
+  | "threads"
   | "google"
   | "cabin"
   | "hotTub"
@@ -98,6 +99,12 @@ const P: Record<IconName, React.ReactNode> = {
     </>
   ),
   facebook: <path d="M14 8h2V5h-2c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.2l.8-3H14V8.5c0-.3.2-.5.5-.5z" />,
+  threads: (
+    <>
+      <path d="M16.4 8.6C15.3 7.2 13.8 6.5 12 6.5 8.4 6.5 6 9 6 12.6c0 3.6 2.4 6 6 6 2.3 0 3.9-.9 4.8-2.7" />
+      <path d="M15.6 15c.6-1 .7-2.3-.1-3.2-1-1.1-3-1.2-4.1-.2-.9.8-.8 2.2.2 2.8 1.4.9 3.4 0 3.6-2.1.1-1.6-.7-3-2.2-3.6" />
+    </>
+  ),
   google: <path d="M20 12c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c2.2 0 4 .8 5.4 2L15 10c-.8-.7-1.8-1.1-3-1.1A4.1 4.1 0 1 0 16 14h-4v-3h8z" />,
   cabin: <path d="M3 20h18M5 20v-8l7-5 7 5v8M9 20v-5h6v5" />,
   hotTub: (

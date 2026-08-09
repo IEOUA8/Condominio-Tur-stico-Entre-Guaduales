@@ -71,6 +71,16 @@ export const galleryItems: GalleryItem[] = [
   { src: "/images/naturaleza/flores-amarillas.jpg", alt: "Flores amarillas del jardín", category: "Naturaleza" },
   { src: "/images/naturaleza/drone-bosque.jpg", alt: "Vista aérea del bosque circundante", category: "Naturaleza" },
   { src: "/images/naturaleza/cafetal.jpg", alt: "Vegetación y cultivos del entorno", category: "Naturaleza" },
+
+  // Cabaña Guacharaca
+  { src: "/images/guacharaca/fachada.jpg", alt: "Fachada de la Cabaña Guacharaca con jardines y vista al valle", category: "Cabañas" },
+  { src: "/images/guacharaca/habitacion-principal.jpg", alt: "Habitación principal de la Cabaña Guacharaca con techo abovedado en madera y ventanas al jardín", category: "Habitaciones", feature: true },
+  { src: "/images/guacharaca/habitacion-auxiliar.jpg", alt: "Habitación auxiliar de la Cabaña Guacharaca con cama doble y vista al verde", category: "Habitaciones" },
+  { src: "/images/guacharaca/habitacion-literas.jpg", alt: "Habitación con literas de madera en la Cabaña Guacharaca", category: "Habitaciones" },
+  { src: "/images/guacharaca/ducha.jpg", alt: "Ducha de diseño con enchape en madera en la Cabaña Guacharaca", category: "Interiores" },
+  { src: "/images/guacharaca/bano.jpg", alt: "Baño de la Cabaña Guacharaca con lavamanos tipo vasija", category: "Interiores" },
+  { src: "/images/guacharaca/bbq-parrilla.jpg", alt: "Zona BBQ de la Cabaña Guacharaca con parrilla y fogón industrial a gas", category: "BBQ y fogatero" },
+  { src: "/images/guacharaca/noche-jardin.jpg", alt: "Jardín iluminado de la Cabaña Guacharaca al anochecer, entre guaduas", category: "Noche" },
 ];
 
 export const galleryCategories: GalleryCategory[] = [

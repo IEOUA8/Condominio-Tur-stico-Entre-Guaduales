@@ -18,15 +18,24 @@ La mayoría vive en **`src/content/site.ts`**.
 - **Servicios** con specs reales (jacuzzi 8 pers/1300 L/35°, BBQ industrial, fogatero)
 - **Redes:** Instagram y perfil de Google integrados
 
+## ✅ Resuelto en esta iteración (2026-08-07)
+- **Fotos de la Cabaña Guacharaca** — la carpeta ya llegó con imágenes. Se seleccionaron
+  y optimizaron las 8 mejores en `public/images/guacharaca/` (habitación principal/auxiliar,
+  literas, fachada, jardín de noche, BBQ, baño y ducha) y se integraron en la galería.
+- **Instagram, Threads y Google** — handles confirmados por el cliente e integrados en el
+  footer (`site.social`). Facebook y TikTok se ocultan automáticamente hasta tener la URL/@ exactos.
+- **Teléfono** — el cliente no tiene línea fija/adicional; se unificó al mismo WhatsApp
+  (+57 311 679 1517) y se quitó el placeholder.
+
 ## ⚠️ Aún pendiente / por confirmar
-- [ ] **URL exacta de Facebook** y **confirmar los handles** de Instagram/TikTok/Threads
-      (el doc traía espacios/typos; ver `site.social`). Verificar que los enlaces abran bien.
-- [ ] **Teléfono fijo/adicional** — ¿es el mismo del WhatsApp? (`site.contact.phone`)
+- [ ] **URL exacta de la página de Facebook** (el cliente dio el nombre, no el enlace) → `site.social.facebook`
+- [ ] **Handle (@) exacto de TikTok** (llegó con espacios: "Cond turistico entre guaduales") → `site.social.tiktok`
+- [ ] **Enlace PÚBLICO de Airbnb de la cabaña Sirirí** — el enviado era del editor de anfitrión
+      (privado). Barranquero y Guacharaca ya están en `site.social.airbnbListings`.
 - [ ] **Tiempo de respuesta** comprometido (`site.operations.responseTime`)
-- [ ] **Fotos de la Cabaña Guacharaca** (la carpeta llegó sin imágenes)
-- [ ] **Textos de testimonios** — el cliente tiene muchas reseñas 5★ en Airbnb; falta el
-      texto/nombres con autorización para publicarlos (hoy `src/content/testimonials.ts` está vacío).
-      Enlaces Airbnb por cabaña disponibles para "ver reseñas".
+- [ ] **Textos de testimonios** — el cliente tiene muchas reseñas 5★ en Airbnb y ofrece bajarlas
+      todas (son públicas) con su autorización. Hoy `src/content/testimonials.ts` está vacío.
+      Decidir si se publican y con qué texto/nombres (o enlazar a Airbnb para "ver reseñas").
 - [ ] **Validación jurídica final** de los textos legales (ya llevan los datos reales).
 - [ ] **DNS del dominio** `condominioturisticoentreguaduales.com` para conectarlo en Vercel.
 - [ ] **Google Analytics / Tag Manager** (opcional, `src/app/layout.tsx`).
