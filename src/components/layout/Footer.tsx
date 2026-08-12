@@ -13,7 +13,9 @@ export function Footer() {
   const socialLinks: { key: string; href: string; icon: IconName; label: string }[] = [
     { key: "instagram", href: site.social.instagram, icon: "instagram", label: "Instagram" },
     { key: "threads", href: site.social.threads, icon: "threads", label: "Threads" },
+    { key: "tiktok", href: site.social.tiktok, icon: "tiktok", label: "TikTok" },
     { key: "facebook", href: site.social.facebook, icon: "facebook", label: "Facebook" },
+    { key: "airbnb", href: site.social.airbnb, icon: "airbnb", label: "Airbnb" },
     { key: "google", href: site.social.google, icon: "google", label: "Google" },
   ];
   const socials = socialLinks.filter((s) => s.href);

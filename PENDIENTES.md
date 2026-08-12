@@ -16,7 +16,7 @@ La mayoría vive en **`src/content/site.ts`**.
 - **Transporte:** coordinado con el anfitrión, costo adicional
 - **Distribución real** de las 3 cabañas (Sirirí 10 camas, Barranquero 8, Guacharaca 8)
 - **Servicios** con specs reales (jacuzzi 8 pers/1300 L/35°, BBQ industrial, fogatero)
-- **Redes:** Instagram y perfil de Google integrados
+- **Redes:** Instagram, Threads, Facebook, TikTok, Airbnb y perfil de Google integrados (footer)
 
 ## ✅ Resuelto en esta iteración (2026-08-12)
 - **Testimonios / reseñas** — el cliente autorizó publicar sus reseñas de Airbnb
@@ -33,6 +33,14 @@ La mayoría vive en **`src/content/site.ts`**.
   deja explícito que las solicitudes se reciben únicamente por los canales oficiales
   (WhatsApp, correo y la solicitud desde la web) y que la marca de tiempo de recepción por
   ese canal es la que determina el cumplimiento del plazo de 24 h.
+- **Facebook, TikTok y Airbnb (los 3 enlaces) + correo** — el cliente envió los datos buenos
+  el 2026-08-12 (2ª entrega):
+  - Facebook: `https://www.facebook.com/profile.php?id=61580204087108` → footer.
+  - TikTok: `https://www.tiktok.com/@cond.turistico.en` → footer (icono nuevo).
+  - Airbnb (URLs canónicas `/rooms/{id}`, sin params de rastreo): Sirirí `1505894084580266005`,
+    Barranquero `1284802899806939624`, Guacharaca `1347007135384451783` → `site.social.airbnbListings`
+    + icono de Airbnb en el footer.
+  - Correo: confirmó `admin@condominioturisticoentreguaduales.com` como bandeja única.
 
 ## ✅ Resuelto en iteración previa (2026-08-07)
 - **Fotos de la Cabaña Guacharaca** — la carpeta ya llegó con imágenes. Se seleccionaron
@@ -44,20 +52,7 @@ La mayoría vive en **`src/content/site.ts`**.
   (+57 311 679 1517) y se quitó el placeholder.
 
 ## ⚠️ Aún pendiente / por confirmar
-> El documento del 2026-08-12 volvió a enviar estos datos igual que antes: **no aportan
-> lo que faltaba**, siguen pendientes.
-- [ ] **URL exacta de la página de Facebook** — el doc 2026-08-12 dio dos nombres
-      ("Condominio Turístico Entre Guaduales" y "Rubén Darío Vargas Echeverri"), pero **sigue
-      sin la URL** de la página → `site.social.facebook` (oculto hasta tenerla).
-- [ ] **Handle (@) exacto de TikTok** — sigue llegando con espacios ("Cond turistico entre
-      guaduales"); falta el @ exacto → `site.social.tiktok` (oculto hasta tenerlo).
-- [ ] **Enlace PÚBLICO de Airbnb de la cabaña Sirirí** — el doc 2026-08-12 **volvió a enviar
-      el enlace del editor de anfitrión (privado)**: `.../hosting/listings/editor/1505894084580266005/...`.
-      Se necesita el enlace público (formato `airbnb.com.co/h/...`). Barranquero y Guacharaca ya están.
 - [ ] **Tiempo de respuesta** comprometido (`site.operations.responseTime`) — el cliente no lo definió.
-- [ ] **Correo de privacidad** — en el doc 2026-08-12 lo volvió a escribir con los mismos typos
-      ("adminin@condomnioturisticoentreguaduales.com"). Se mantiene el oficial
-      `admin@condominioturisticoentreguaduales.com`. **Confirmar cuál es el correcto.**
 - [ ] **Validación jurídica final** de los textos legales (ya llevan los datos reales).
 - [ ] **DNS del dominio** `condominioturisticoentreguaduales.com` para conectarlo en Vercel.
 - [ ] **Google Analytics / Tag Manager** (opcional, `src/app/layout.tsx`).

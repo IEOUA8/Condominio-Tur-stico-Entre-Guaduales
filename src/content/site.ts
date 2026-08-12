@@ -64,7 +64,7 @@ export const site = {
     rntIsPlaceholder: false,
     responsibleName: "Rubén Darío Vargas Echeverri",
     documentId: "C.C. 15.444.992",
-    // El cliente escribió "adminin@condomnio…" (con typos); se usa el correo oficial.
+    // ✅ Confirmado por el cliente (2026-08-12): correo único para todo.
     privacyEmail: "admin@condominioturisticoentreguaduales.com",
     legalIsPlaceholder: false,
   },
@@ -85,21 +85,19 @@ export const site = {
       "El servicio de transporte se coordina directamente con el anfitrión, según recorridos programados con antelación.",
   },
 
-  /* ----- Redes sociales y canales (datos del cliente, ago-2026) ----- */
+  /* ----- Redes sociales y canales (confirmados por el cliente, 2026-08-12) ----- */
   social: {
-    // Confirmados por el cliente:
     instagram: "https://www.instagram.com/cond_turistico_entre_guaduales",
     threads: "https://www.threads.net/@cond_turistico_entre_guaduales",
+    facebook: "https://www.facebook.com/profile.php?id=61580204087108",
+    tiktok: "https://www.tiktok.com/@cond.turistico.en",
     google: "https://share.google/hHCtB6T2wZzRoRSu8",
-    // Pendientes de URL/handle exacto — se dejan vacíos para no publicar enlaces rotos:
-    facebook: "", // El cliente dio el nombre ("Condominio Turístico Entre Guaduales"), no la URL de la página.
-    tiktok: "", // El handle llegó con espacios ("Cond turistico entre guaduales"); falta el @ exacto.
-    // Airbnb: enlaces PÚBLICOS por cabaña (para "ver reseñas"). Sirirí pendiente:
-    // el cliente envió el enlace del editor de anfitrión (privado), no el público.
-    airbnb: "https://www.airbnb.com.co/h/casa-finca-un-oasis-de-vida", // Guacharaca (principal)
+    // Airbnb: enlaces PÚBLICOS por cabaña (URLs canónicas /rooms/{id}, sin parámetros de rastreo).
+    airbnb: "https://www.airbnb.com.co/rooms/1347007135384451783", // Guacharaca (principal)
     airbnbListings: [
-      { cabin: "Barranquero", url: "https://www.airbnb.com.co/h/cabana-en-rionegro-con-jacuzzi" },
-      { cabin: "Guacharaca", url: "https://www.airbnb.com.co/h/casa-finca-un-oasis-de-vida" },
+      { cabin: "Sirirí", url: "https://www.airbnb.com.co/rooms/1505894084580266005" },
+      { cabin: "Barranquero", url: "https://www.airbnb.com.co/rooms/1284802899806939624" },
+      { cabin: "Guacharaca", url: "https://www.airbnb.com.co/rooms/1347007135384451783" },
     ] as { cabin: string; url: string }[],
   },
 
@@ -113,9 +111,6 @@ export const site = {
 /** Registro legible de todo lo pendiente por confirmar (para el equipo). */
 export const PENDING: { key: PendingKey; label: string; where: string }[] = [
   { key: "responseTime", label: "Tiempo de respuesta comprometido", where: "site.operations.responseTime" },
-  { key: "social", label: "URL exacta de la página de Facebook", where: "site.social.facebook" },
-  { key: "social", label: "Handle (@) exacto de TikTok", where: "site.social.tiktok" },
-  { key: "social", label: "Enlace PÚBLICO de Airbnb de la cabaña Sirirí (el enviado era del editor de anfitrión)", where: "site.social.airbnbListings" },
 ];
 
 /* --------------------------- Navegación (§6.1) --------------------------- */
