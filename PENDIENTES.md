@@ -8,7 +8,7 @@ La mayoría vive en **`src/content/site.ts`**.
 - **Correo** oficial: admin@condominioturisticoentreguaduales.com
 - **RNT:** 220283
 - **Responsable:** Rubén Darío Vargas Echeverri (C.C. 15.444.992)
-- **Ubicación:** Vereda Los Pinos, Finca 188, Rionegro, Antioquia (Plus Code 6J4X+H2) — **mapa público visible** en la home y en /ubicacion (2026-08-12)
+- **Ubicación:** Vereda Los Pinos, Rionegro, Antioquia (Plus Code 6J4X+H2) — **mapa público visible** en la home y en /ubicacion (2026-08-12). Nota interna: la finca es la N.° 188, pero por decisión del cliente NO se publica ese detalle en la web (el pin del mapa usa el Plus Code, que es exacto).
 - **Check-in/out:** 3:00 p. m. / 12:00 m.
 - **Pagos:** transferencia bancaria (Bancolombia) — datos de cuenta NO publicados, se comparten en privado al reservar
 - **Depósito de garantía:** $500.000 (devuelto al día siguiente del check-out)

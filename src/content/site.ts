@@ -53,7 +53,7 @@ export const site = {
     region: "Oriente Antioqueño",
     addressPublic:
       "Vereda Los Pinos, Rionegro, Antioquia (zona de la Vía a Galicia). Te enviamos las indicaciones detalladas de llegada al confirmar tu reserva.",
-    mapAddress: "Vereda Los Pinos, Finca 188, Rionegro, Antioquia",
+    mapAddress: "Vereda Los Pinos, Rionegro, Antioquia",
     plusCode: "6J4X+H2 Rionegro, Antioquia",
     locationIsPlaceholder: false,
     // Embebido sin API key, centrado en el plus code exacto de la finca.
