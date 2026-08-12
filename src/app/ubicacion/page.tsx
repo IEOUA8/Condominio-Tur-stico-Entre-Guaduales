@@ -9,7 +9,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Ubicación y cómo llegar",
   description:
-    "Un entorno tranquilo rodeado de naturaleza. Por privacidad, la ubicación exacta y las indicaciones de llegada se comparten al confirmar la reserva.",
+    "Estamos en la Vereda Los Pinos, Rionegro (Antioquia), en la zona de la Vía a Galicia. Consulta el mapa y cómo llegar a Entre Guaduales.",
   alternates: { canonical: "/ubicacion" },
 };
 
@@ -19,8 +19,8 @@ const breadcrumbs = [
 ];
 
 const info: { icon: IconName; title: string; text: string; pending?: boolean }[] = [
-  { icon: "mapPin", title: "Región", text: `${site.contact.region} · ${site.contact.city}` },
-  { icon: "info", title: "Dirección exacta", text: "La dirección detallada de la finca se comparte al confirmar la reserva." },
+  { icon: "mapPin", title: "Dónde estamos", text: `${site.contact.mapAddress} (${site.contact.region})` },
+  { icon: "info", title: "Código de ubicación (Plus Code)", text: `${site.contact.plusCode} · útil para llegar con Google Maps o Waze.` },
   { icon: "van", title: "Transporte", text: "Se coordina directamente con el anfitrión, según recorridos programados, con costo adicional." },
   { icon: "car", title: "Parqueadero", text: "Parqueadero privado dentro de la propiedad." },
 ];
@@ -32,7 +32,7 @@ export default function UbicacionPage() {
       <PageHero
         eyebrow="Ubicación y entorno"
         title="Naturaleza cerca, sin renunciar a la comodidad"
-        subtitle="Un entorno tranquilo rodeado de montañas y vegetación. Compartimos la ubicación exacta e indicaciones de llegada al confirmar tu reserva."
+        subtitle="Estamos en la Vereda Los Pinos (Rionegro, Antioquia), en la zona de la Vía a Galicia. Consulta el mapa y te enviamos las indicaciones de llegada al confirmar tu reserva."
         image="/images/exteriores/entorno-valle.jpg"
         imageAlt="Entorno del condominio con vista al valle"
         breadcrumbs={breadcrumbs}

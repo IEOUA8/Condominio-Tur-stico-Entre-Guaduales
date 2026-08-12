@@ -48,14 +48,17 @@ export const site = {
     email: "admin@condominioturisticoentreguaduales.com", // ✅ Confirmado por el cliente
     emailIsPlaceholder: false,
 
-    // Ubicación confirmada por el cliente (Oriente Antioqueño).
+    // Ubicación confirmada por el cliente (Oriente Antioqueño). Mapa público (2026-08-12).
     city: "Rionegro, Antioquia",
     region: "Oriente Antioqueño",
     addressPublic:
-      "Oriente Antioqueño, cerca de Rionegro (Vía a Galicia). La dirección detallada se comparte al confirmar la reserva.",
+      "Vereda Los Pinos, Rionegro, Antioquia (zona de la Vía a Galicia). Te enviamos las indicaciones detalladas de llegada al confirmar tu reserva.",
+    mapAddress: "Vereda Los Pinos, Finca 188, Rionegro, Antioquia",
+    plusCode: "6J4X+H2 Rionegro, Antioquia",
     locationIsPlaceholder: false,
-    mapEmbedUrl: "https://www.google.com/maps?q=Condominio+Tur%C3%ADstico+Entre+Guaduales&output=embed",
-    mapLink: "https://maps.app.goo.gl/ZziFaNUXC2pVto2B8",
+    // Embebido sin API key, centrado en el plus code exacto de la finca.
+    mapEmbedUrl: "https://www.google.com/maps?q=6J4X%2BH2%20Rionegro%2C%20Antioquia&z=16&output=embed",
+    mapLink: "https://www.google.com/maps?q=6J4X%2BH2%20Rionegro%2C%20Antioquia",
   },
 
   /* ----- Registro / legales (✅ confirmado por el cliente) ----- */

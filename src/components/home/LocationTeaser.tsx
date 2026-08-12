@@ -14,14 +14,14 @@ export function LocationTeaser() {
               Naturaleza cerca, sin renunciar a la comodidad
             </h2>
             <p className="mt-4 leading-relaxed text-forest-900/75">
-              Un entorno tranquilo rodeado de montañas y vegetación. Por privacidad
-              y seguridad, compartimos la ubicación exacta e indicaciones de llegada
-              al confirmar tu reserva.
+              Un entorno tranquilo rodeado de montañas y vegetación, en la Vereda
+              Los Pinos (Rionegro, Antioquia), sobre la zona de la Vía a Galicia.
+              Te enviamos las indicaciones de llegada al confirmar tu reserva.
             </p>
 
             <ul className="mt-6 space-y-3">
               <LocationRow icon="mapPin" label={`${site.contact.region} · ${site.contact.city}`} />
-              <LocationRow icon="info" label="Ubicación exacta compartida al confirmar la reserva" />
+              <LocationRow icon="info" label="Indicaciones de llegada al confirmar la reserva" />
               <LocationRow icon="van" label="Servicio de transporte disponible con costo adicional" />
             </ul>
 
@@ -30,27 +30,15 @@ export function LocationTeaser() {
             </Button>
           </div>
 
-          {/* Mapa: placeholder hasta confirmar ubicación (§7.11) */}
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-forest-900/10 bg-sage-500/15">
-            <div
-              aria-hidden
-              className="absolute inset-0 opacity-40"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle at 30% 40%, rgba(120,149,121,0.5), transparent 45%), radial-gradient(circle at 70% 60%, rgba(49,93,73,0.35), transparent 45%)",
-              }}
+          {/* Mapa real de la ubicación */}
+          <div className="overflow-hidden rounded-3xl border border-forest-900/10">
+            <iframe
+              src={site.contact.mapEmbedUrl}
+              title="Ubicación de Entre Guaduales en el mapa"
+              className="aspect-[4/3] w-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-guadua-700 text-ivory-50">
-                <Icon name="mapPin" size={26} />
-              </span>
-              <p className="mt-4 max-w-xs text-sm font-medium text-forest-900">
-                Oriente Antioqueño, cerca de Rionegro. Consulta el mapa y cómo llegar.
-              </p>
-              <span className="mt-2 rounded-full bg-white/70 px-3 py-1 text-xs text-guadua-700">
-                Ver ubicación
-              </span>
-            </div>
           </div>
         </div>
       </Container>
