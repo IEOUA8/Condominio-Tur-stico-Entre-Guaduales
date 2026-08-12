@@ -54,6 +54,11 @@ export default function ContactoPage() {
 
       <Section tone="ivory">
         <Container className="max-w-4xl">
+          <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-guadua-700/10 px-4 py-2 text-sm text-guadua-800">
+            <Icon name="clock" size={16} />
+            Respondemos en {site.operations.responseTime} en horario de atención.
+          </p>
+
           <div className="grid gap-5 sm:grid-cols-2">
             {channels.map((c) => (
               <div key={c.title} className="flex flex-col rounded-3xl border border-forest-900/8 bg-white p-6">

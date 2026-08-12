@@ -73,7 +73,7 @@ export const site = {
   operations: {
     checkIn: "3:00 p. m.",
     checkOut: "12:00 m. (mediodía)",
-    responseTime: "", // ⚠️ PENDIENTE: el cliente no definió un tiempo de respuesta
+    responseTime: "máximo 2 horas", // ✅ Confirmado (2026-08-12). Valor para componer frases ("respondemos en …").
     // Los datos de la cuenta NO se publican (se comparten en privado al reservar).
     paymentMethods: ["Transferencia bancaria (Bancolombia)"],
     depositAmount: 500_000,
@@ -109,9 +109,7 @@ export const site = {
 } as const;
 
 /** Registro legible de todo lo pendiente por confirmar (para el equipo). */
-export const PENDING: { key: PendingKey; label: string; where: string }[] = [
-  { key: "responseTime", label: "Tiempo de respuesta comprometido", where: "site.operations.responseTime" },
-];
+export const PENDING: { key: PendingKey; label: string; where: string }[] = [];
 
 /* --------------------------- Navegación (§6.1) --------------------------- */
 export type NavItem = { label: string; href: string };

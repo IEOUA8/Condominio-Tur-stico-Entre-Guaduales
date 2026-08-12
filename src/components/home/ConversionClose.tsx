@@ -2,12 +2,16 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AntifraudNotice } from "@/components/ui/AntifraudNotice";
-import { whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/content/site";
+import { site, whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/content/site";
 
 const steps = [
   { n: 1, title: "Cuéntanos tu plan", text: "Fechas, huéspedes y tipo de viaje en pocos pasos." },
   { n: 2, title: "Recibe tu recomendación", text: "Te sugerimos la experiencia ideal con una tarifa estimada." },
-  { n: 3, title: "Confirmamos por WhatsApp", text: "Recibes un número de solicitud y coordinamos disponibilidad." },
+  {
+    n: 3,
+    title: "Confirmamos por WhatsApp",
+    text: `Recibes tu número de solicitud y te respondemos en ${site.operations.responseTime}.`,
+  },
 ];
 
 export function ConversionClose() {

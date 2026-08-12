@@ -52,7 +52,10 @@ La mayoría vive en **`src/content/site.ts`**.
   (+57 311 679 1517) y se quitó el placeholder.
 
 ## ⚠️ Aún pendiente / por confirmar
-- [ ] **Tiempo de respuesta** comprometido (`site.operations.responseTime`) — el cliente no lo definió.
 - [ ] **Validación jurídica final** de los textos legales (ya llevan los datos reales).
-- [ ] **DNS del dominio** `condominioturisticoentreguaduales.com` para conectarlo en Vercel.
-- [ ] **Google Analytics / Tag Manager** (opcional, `src/app/layout.tsx`).
+
+## 🔧 Gestionado fuera del código
+- **Tiempo de respuesta** — ✅ definido: "máximo 2 horas" (`site.operations.responseTime`).
+  Se muestra en la home (paso "Confirmamos por WhatsApp") y en la página de contacto.
+- **DNS del dominio** `condominioturisticoentreguaduales.com` → lo asigna el equipo manualmente.
+- **Google Analytics / Tag Manager** → diferido hasta que el cliente confirme (`src/app/layout.tsx`).
