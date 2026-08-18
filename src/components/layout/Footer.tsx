@@ -28,7 +28,7 @@ export function Footer() {
           <div className="text-center lg:text-left">
             <BrandLockup tone="gold" size="lg" />
             <p className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-ivory-50/70 lg:mx-0">
-              Condominio turístico boutique entre la guadua y la naturaleza.
+              Condominio turístico entre la guadua y la naturaleza.
               Experiencias privadas para crear recuerdos inolvidables en pareja,
               familia o con amigos.
             </p>

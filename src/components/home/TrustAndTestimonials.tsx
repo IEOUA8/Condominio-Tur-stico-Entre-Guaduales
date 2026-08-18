@@ -38,39 +38,55 @@ export function TrustAndTestimonials() {
           ))}
         </div>
 
-        {/* Testimonios: solo reseñas verificables. Estado honesto mientras tanto. */}
-        <div className="mt-10 rounded-3xl bg-sand-200/40 p-8 text-center sm:p-10">
-          {hasTestimonials ? (
-            <div className="grid gap-6 sm:grid-cols-3">
-              {testimonials.map((t, i) => (
-                <figure key={i} className="rounded-2xl bg-white p-6 text-left shadow-sm">
-                  <div className="flex text-gold-500" aria-hidden>
-                    {Array.from({ length: 5 }).map((_, s) => (
-                      <Icon key={s} name="star" size={16} className="fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="mt-3 text-sm text-forest-900/80">“{t.quote}”</blockquote>
-                  <figcaption className="mt-4 text-xs font-medium text-forest-900">
-                    {t.name} · <span className="text-forest-900/60">{t.tripType}</span>
-                    {t.source && <span className="text-forest-900/50"> · {t.source}</span>}
-                  </figcaption>
-                </figure>
-              ))}
+        {/* Testimonios: solo reseñas verificables (reseñas reales de Airbnb).
+            Carrusel en bucle continuo: una sola fila, ~3 visibles, se pausa al
+            pasar el cursor. La lista se duplica para el loop sin salto. */}
+        {hasTestimonials ? (
+          <div className="mt-12">
+            <p className="text-center text-sm font-medium text-forest-900/55">
+              Reseñas reales de nuestros huéspedes · Airbnb ★★★★★
+            </p>
+            <div
+              className="marquee-viewport mt-6 overflow-hidden rounded-3xl bg-sand-200/40 py-8"
+              aria-label="Reseñas de huéspedes en Airbnb"
+            >
+              <ul className="marquee-track flex w-max items-stretch">
+                {[...testimonials, ...testimonials].map((t, i) => (
+                  <li
+                    key={i}
+                    aria-hidden={i >= testimonials.length}
+                    className="mr-5 flex w-[270px] shrink-0 flex-col rounded-2xl bg-white p-6 text-left shadow-sm sm:w-[310px] lg:w-[340px]"
+                  >
+                    <div className="flex text-gold-500" aria-hidden>
+                      {Array.from({ length: 5 }).map((_, s) => (
+                        <Icon key={s} name="star" size={16} className="fill-current" />
+                      ))}
+                    </div>
+                    <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-forest-900/80">
+                      “{t.quote}”
+                    </blockquote>
+                    <figcaption className="mt-4 pt-3 text-xs font-medium text-forest-900">
+                      {t.name} · <span className="text-forest-900/60">{t.tripType}</span>
+                      {t.source && <span className="text-forest-900/50"> · {t.source}</span>}
+                    </figcaption>
+                  </li>
+                ))}
+              </ul>
             </div>
-          ) : (
-            <>
-              <Icon name="sparkles" size={28} className="mx-auto text-gold-500" />
-              <h3 className="mt-3 font-display text-2xl text-forest-900">
-                Sé de los primeros en compartir tu experiencia
-              </h3>
-              <p className="mx-auto mt-3 max-w-lg text-sm text-forest-900/70">
-                Publicaremos aquí las reseñas verificadas de nuestros huéspedes.
-                Preferimos no inventar testimonios: cuando vivas Entre Guaduales,
-                tu opinión real tendrá su lugar.
-              </p>
-            </>
-          )}
-        </div>
+          </div>
+        ) : (
+          <div className="mt-10 rounded-3xl bg-sand-200/40 p-8 text-center sm:p-10">
+            <Icon name="sparkles" size={28} className="mx-auto text-gold-500" />
+            <h3 className="mt-3 font-display text-2xl text-forest-900">
+              Sé de los primeros en compartir tu experiencia
+            </h3>
+            <p className="mx-auto mt-3 max-w-lg text-sm text-forest-900/70">
+              Publicaremos aquí las reseñas verificadas de nuestros huéspedes.
+              Preferimos no inventar testimonios: cuando vivas Entre Guaduales,
+              tu opinión real tendrá su lugar.
+            </p>
+          </div>
+        )}
       </Container>
     </Section>
   );

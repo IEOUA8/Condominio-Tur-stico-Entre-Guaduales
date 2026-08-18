@@ -81,6 +81,21 @@ export const galleryItems: GalleryItem[] = [
   { src: "/images/guacharaca/bano.jpg", alt: "Baño de la Cabaña Guacharaca con lavamanos tipo vasija", category: "Interiores" },
   { src: "/images/guacharaca/bbq-parrilla.jpg", alt: "Zona BBQ de la Cabaña Guacharaca con parrilla y fogón industrial a gas", category: "BBQ y fogatero" },
   { src: "/images/guacharaca/noche-jardin.jpg", alt: "Jardín iluminado de la Cabaña Guacharaca al anochecer, entre guaduas", category: "Noche" },
+
+  // Nuevas fotos por cabaña (Barranquero, Sirirí, Guacharaca) — entrega del cliente 2026-08-18
+  { src: "/images/galeria/siriri-cocina.jpg", alt: "Cocina principal de la Cabaña Sirirí, equipada en madera", category: "Interiores", feature: true },
+  { src: "/images/galeria/siriri-comedor.jpg", alt: "Comedor de madera de la Cabaña Sirirí con flores frescas", category: "Interiores" },
+  { src: "/images/galeria/barranquero-cocina.jpg", alt: "Cocina de la Cabaña Barranquero con fogón a gas y mesón en granito", category: "Interiores" },
+  { src: "/images/galeria/barranquero-sala.jpg", alt: "Sala de la Cabaña Barranquero con sofás y televisor", category: "Interiores", feature: true },
+  { src: "/images/galeria/barranquero-sala-2.jpg", alt: "Sala de la Cabaña Barranquero con sofás de madera y plantas", category: "Interiores" },
+  { src: "/images/galeria/barranquero-sala-detalle.jpg", alt: "Detalle decorativo de la sala de la Cabaña Barranquero", category: "Interiores" },
+  { src: "/images/galeria/guacharaca-habitacion-principal.jpg", alt: "Habitación principal de la Cabaña Guacharaca con ventanas al jardín", category: "Habitaciones" },
+  { src: "/images/galeria/guacharaca-habitacion-principal-2.jpg", alt: "Habitación principal de la Cabaña Guacharaca con techo abovedado en madera", category: "Habitaciones" },
+  { src: "/images/galeria/guacharaca-bano-principal.jpg", alt: "Baño principal de la Cabaña Guacharaca con lavamanos tipo vasija", category: "Interiores" },
+  { src: "/images/galeria/guacharaca-sala-detalle.jpg", alt: "Detalle decorativo de la sala de la Cabaña Guacharaca", category: "Interiores" },
+  { src: "/images/galeria/guacharaca-detalles.jpg", alt: "Detalles y dotación de la Cabaña Guacharaca", category: "Interiores" },
+  { src: "/images/galeria/guacharaca-bbq-terraza.jpg", alt: "Terraza BBQ cubierta de la Cabaña Guacharaca con comedor exterior", category: "BBQ y fogatero", feature: true },
+  { src: "/images/galeria/guacharaca-bbq.jpg", alt: "Zona BBQ de la Cabaña Guacharaca con parrilla a gas y vista a la montaña", category: "BBQ y fogatero" },
 ];
 
 export const galleryCategories: GalleryCategory[] = [

@@ -13,8 +13,8 @@ export const services: Service[] = [
   { icon: "grill", title: "Zona BBQ", description: "Fogón industrial a gas, estufa de 4 puestos, plancha, asador y barril." },
   { icon: "car", title: "Parqueadero privado", description: "Estacionamiento dentro de la propiedad para tu tranquilidad." },
   { icon: "trail", title: "Senderos ecológicos", description: "Caminos entre la vegetación para recorrer con calma." },
-  { icon: "leaf", title: "Zonas verdes y jardines", description: "Amplias zonas verdes, jardines y guadua alrededor de las cabañas." },
+  { icon: "leaf", title: "Zonas verdes y jardines", description: "Amplias zonas verdes, jardines y naturaleza alrededor de las cabañas." },
   { icon: "water", title: "Lago", description: "Un lago que acompaña el paisaje y los atardeceres del condominio." },
-  { icon: "moon", title: "Ambientes de descanso", description: "Rincones pensados para leer, conversar o simplemente no hacer nada." },
+  { icon: "moon", title: "Sol & Luna", description: "Un ambiente donde los astros de la naturaleza se unen y están al alcance de todos." },
   { icon: "van", title: "Servicio de transporte", description: "Transporte disponible con costo adicional, coordinado con anticipación.", note: "Costo adicional" },
 ];

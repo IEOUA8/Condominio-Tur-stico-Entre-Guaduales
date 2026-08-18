@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
 import { CookieBanner } from "@/components/layout/CookieBanner";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 
 const fraunces = Fraunces({
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Condominio turístico boutique con cabañas privadas, jacuzzi, zona BBQ y naturaleza. Experiencias para pareja, familia o grupos de 2 a 26 huéspedes.",
+    "Condominio turístico con cabañas privadas, jacuzzi, zona BBQ y naturaleza. Experiencias para pareja, familia o grupos de 2 a 26 huéspedes.",
   applicationName: site.name,
   keywords: [
     "cabañas privadas",
@@ -97,6 +98,7 @@ export default function RootLayout({
         <MobileNav />
         <WhatsAppFab />
         <CookieBanner />
+        <MetaPixel />
       </body>
     </html>
   );

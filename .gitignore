@@ -24,6 +24,11 @@
 .DS_Store
 *.pem
 
+# fotos fuente del cliente (sin optimizar) — no se despliegan.
+# Las versiones optimizadas viven en /public/images/{lugar,galeria,...}.
+/public/images/lugares/
+/public/images/nuevas fotos galeria/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

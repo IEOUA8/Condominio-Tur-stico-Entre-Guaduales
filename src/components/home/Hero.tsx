@@ -7,8 +7,8 @@ export function Hero() {
     <section className="relative flex min-h-[92svh] flex-col justify-end overflow-hidden lg:min-h-[88svh]">
       {/* Fondo fotográfico real */}
       <Image
-        src="/images/jacuzzi/jacuzzi-atardecer.jpg"
-        alt="Jacuzzi privado iluminado al atardecer en el Condominio Turístico Entre Guaduales"
+        src="/images/hero/hero-espigas.jpg"
+        alt="Espigas doradas a contraluz al atardecer entre los jardines del Condominio Turístico Entre Guaduales"
         fill
         priority
         sizes="100vw"
@@ -24,16 +24,16 @@ export function Hero() {
         <div className="max-w-2xl">
           <span className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-ivory-50/85">
             <span aria-hidden className="h-px w-8 bg-gold-400/80" />
-            Condominio turístico boutique
+            Condominio turístico
           </span>
 
-          <h1 className="mt-6 max-w-[16ch] font-display text-[2.6rem] leading-[1.04] text-white sm:text-6xl lg:text-[4.25rem]">
-            Un lugar para detener el tiempo
+          <h1 className="mt-6 max-w-[18ch] font-display text-[2.6rem] leading-[1.04] text-white sm:text-6xl lg:text-[4.25rem]">
+            Un lugar para volver a estar juntos
           </h1>
 
           <p className="mt-5 max-w-lg text-base leading-relaxed text-ivory-50/90 sm:text-lg">
-            Cabañas privadas, jacuzzi y naturaleza para compartir experiencias
-            inolvidables en pareja, familia o con amigos.
+            Naturaleza, tranquilidad y comodidad para disfrutar en familia y
+            crear recuerdos que perduran.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

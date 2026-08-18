@@ -23,7 +23,7 @@ export const faqs: Faq[] = [
   },
   {
     category: "Tarifas",
-    q: "¿Por qué la experiencia Dos Familias muestra precios «desde»?",
+    q: "¿Por qué la experiencia Uniendo familias muestra precios «desde»?",
     a: "Porque la tarifa varía según la combinación de cabañas y la preferencia de privacidad del grupo. Por eso trabajamos una propuesta personalizada antes de confirmar un valor.",
   },
   {

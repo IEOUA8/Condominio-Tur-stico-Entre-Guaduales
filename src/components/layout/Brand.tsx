@@ -17,7 +17,7 @@ const H = 298;
 type Tone = "light" | "dark" | "gold";
 
 const sizeH: Record<string, string> = {
-  sm: "h-10 lg:h-12",
+  sm: "h-12 lg:h-14",
   md: "h-12",
   lg: "h-14 lg:h-16",
 };

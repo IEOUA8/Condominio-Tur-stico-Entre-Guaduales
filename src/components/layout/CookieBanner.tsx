@@ -24,6 +24,8 @@ export function CookieBanner() {
   const decide = (value: "accepted" | "rejected") => {
     try {
       window.localStorage.setItem(KEY, value);
+      // Notifica a la analítica (Meta Pixel) para activarse sin recargar.
+      window.dispatchEvent(new Event("eg-cookie-consent"));
     } catch {
       /* ignore */
     }

@@ -10,7 +10,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "El condominio",
   description:
-    "Un condominio turístico boutique entre la guadua: cabañas privadas, jacuzzi, lago, zona BBQ, fogatero, senderos y amplias zonas verdes.",
+    "Un condominio turístico entre la guadua: cabañas privadas, jacuzzi, lago, zona BBQ, fogatero, senderos y amplias zonas verdes.",
   alternates: { canonical: "/condominio" },
 };
 
@@ -33,7 +33,7 @@ export default function CondominioPage() {
       <PageHero
         eyebrow="El lugar"
         title="Un refugio entre la guadua y la naturaleza"
-        subtitle="Entre Guaduales es un condominio turístico boutique pensado para el descanso, la privacidad y el tiempo compartido en contacto con la naturaleza."
+        subtitle="Entre Guaduales es un condominio turístico pensado para el descanso, la privacidad y el tiempo compartido en contacto con la naturaleza."
         image="/images/exteriores/panoramica-lago.jpg"
         imageAlt="Vista panorámica del condominio con lago"
         breadcrumbs={breadcrumbs}

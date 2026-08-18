@@ -161,6 +161,25 @@ body {
   animation: eg-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+/* Carrusel de reseñas en bucle continuo (marquee).
+   La lista se renderiza duplicada; translateX(-50%) recorre un set completo
+   y reinicia sin salto. Se pausa al pasar el cursor. */
+@keyframes eg-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: eg-marquee 45s linear infinite;
+  will-change: transform;
+}
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
+}
+
 /* Respeto por prefers-reduced-motion (§13.6) */
 @media (prefers-reduced-motion: reduce) {
   html {

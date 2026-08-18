@@ -4,20 +4,20 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const blocks = [
   {
-    img: "/images/jacuzzi/jacuzzi-atardecer.jpg",
-    alt: "Jacuzzi privado al atardecer entre la vegetación",
+    img: "/images/lugar/zona-social.jpg",
+    alt: "Sala exterior con pérgola y zona BBQ entre jardines",
     title: "Privacidad para reencontrarse",
     text: "Cada cabaña es un refugio íntimo con jacuzzi privado. Un espacio para bajar el ritmo, conversar sin prisa y dejar que el atardecer haga el resto.",
   },
   {
-    img: "/images/momentos/fogatero-personas.jpg",
-    alt: "Personas compartiendo alrededor del fogatero de noche",
+    img: "/images/lugar/fogatero-noche.jpg",
+    alt: "Fogatero encendido rodeado de bancas al caer la noche",
     title: "Tiempo compartido alrededor del fuego",
     text: "El fogatero y la zona BBQ reúnen a la familia y a los amigos cuando cae la noche. Historias, risas y un cielo despejado que invita a quedarse un rato más.",
   },
   {
-    img: "/images/exteriores/jardin-pergola.jpg",
-    alt: "Jardines y zonas verdes del condominio",
+    img: "/images/lugar/fogatero-jardines.jpg",
+    alt: "Jardines, flores y zonas verdes que rodean el fogatero del condominio",
     title: "Naturaleza que rodea cada rincón",
     text: "Senderos entre la guadua, jardines, un lago y amplias zonas verdes. La naturaleza no es el fondo: es parte de la experiencia, en cada mañana y cada caminata.",
   },

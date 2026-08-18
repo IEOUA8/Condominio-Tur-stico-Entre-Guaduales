@@ -26,7 +26,7 @@ export function OrganizationJsonLd() {
         alternateName: site.name,
         url: site.url,
         description:
-          "Condominio turístico boutique con cabañas privadas, jacuzzi, zona BBQ, fogatero y naturaleza. Experiencias para 2 a 26 huéspedes.",
+          "Condominio turístico con cabañas privadas, jacuzzi, zona BBQ, fogatero y naturaleza. Experiencias para 2 a 26 huéspedes.",
         image: `${site.url}/images/exteriores/panoramica-lago.jpg`,
         logo: `${site.url}/brand/logo-header.png`,
         slogan: site.promise,

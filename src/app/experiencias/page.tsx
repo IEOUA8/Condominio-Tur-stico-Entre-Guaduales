@@ -141,7 +141,7 @@ export default function ExperienciasPage() {
 
           <p className="mt-4 flex items-start gap-2 text-xs text-forest-900/55">
             <Icon name="info" size={15} className="mt-0.5 shrink-0" />
-            La experiencia Dos Familias muestra valores «desde»: la tarifa final depende de
+            La experiencia Uniendo familias muestra valores «desde»: la tarifa final depende de
             la combinación de cabañas y se confirma con una cotización personalizada.
           </p>
 

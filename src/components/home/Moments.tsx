@@ -3,9 +3,9 @@ import { Container, Section, Eyebrow } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 
 const moments = [
-  { time: "Amanecer", img: "/images/exteriores/jardin-verde.jpg", alt: "Mañana entre las zonas verdes", text: "El día empieza con niebla ligera sobre el verde y el canto de los pájaros." },
-  { time: "Tarde de descanso", img: "/images/jacuzzi/jacuzzi-atardecer.jpg", alt: "Jacuzzi privado por la tarde", text: "Horas lentas: jacuzzi, lectura y el sonido del viento entre la guadua." },
-  { time: "Atardecer para compartir", img: "/images/exteriores/panoramica-lago.jpg", alt: "Atardecer sobre el lago", text: "La luz dorada cae sobre el lago mientras se enciende la zona BBQ." },
+  { time: "Amanecer", img: "/images/momentos/amanecer-terraza.jpg", alt: "Terraza entre la niebla del amanecer", text: "El día empieza con niebla ligera sobre el verde y el canto de los pájaros." },
+  { time: "Tarde de descanso", img: "/images/momentos/tarde-casa-jacuzzi.jpg", alt: "Casa y jacuzzi para la tarde de descanso", text: "Horas lentas: jacuzzi, lectura y el sonido del viento entre la guadua." },
+  { time: "Atardecer para compartir", img: "/images/momentos/atardecer-hojas.jpg", alt: "Hojas doradas a contraluz al atardecer", text: "La luz dorada cae sobre el horizonte mientras la noche se abre paso." },
   { time: "Noche junto al fogatero", img: "/images/momentos/fogatero-personas.jpg", alt: "Noche alrededor del fogatero", text: "El fuego, las historias y un cielo despejado cierran el día." },
 ];
 
