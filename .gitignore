@@ -28,6 +28,7 @@
 # Las versiones optimizadas viven en /public/images/{lugar,galeria,...}.
 /public/images/lugares/
 /public/images/nuevas fotos galeria/
+/public/images/portada seo.png
 
 # debug
 npm-debug.log*

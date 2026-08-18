@@ -2,8 +2,9 @@ import { site } from "@/content/site";
 
 /* ==========================================================================
    DATOS ESTRUCTURADOS (§17.2)
-   Solo propiedades verificables. No incluimos dirección exacta, teléfono ni
-   reseñas hasta que el cliente los confirme (evita marcado falso).
+   Solo propiedades verificables. Ubicación (Rionegro, Antioquia) y teléfono
+   ya son públicos y confirmados por el cliente; NO se marca la calle/finca
+   exacta ni las reseñas (evita marcado falso o penalizable).
    ========================================================================== */
 
 function JsonLd({ data }: { data: Record<string, unknown> }) {
@@ -26,10 +27,29 @@ export function OrganizationJsonLd() {
         alternateName: site.name,
         url: site.url,
         description:
-          "Condominio turístico con cabañas privadas, jacuzzi, zona BBQ, fogatero y naturaleza. Experiencias para 2 a 26 huéspedes.",
-        image: `${site.url}/images/exteriores/panoramica-lago.jpg`,
+          "Cabañas privadas con jacuzzi, zona BBQ, fogatero y naturaleza en Rionegro, Antioquia. Experiencias para 2 a 26 huéspedes.",
+        image: `${site.url}/images/og-cover.jpg`,
         logo: `${site.url}/brand/logo-header.png`,
         slogan: site.promise,
+        telephone: site.contact.phone,
+        email: site.contact.email,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Rionegro",
+          addressRegion: "Antioquia",
+          addressCountry: "CO",
+        },
+        hasMap: site.contact.mapLink,
+        priceRange: "$$",
+        currenciesAccepted: "COP",
+        maximumAttendeeCapacity: site.capacity.maxGuests,
+        sameAs: [
+          site.social.instagram,
+          site.social.facebook,
+          site.social.tiktok,
+          site.social.threads,
+          site.social.airbnb,
+        ],
         petsAllowed: true,
         amenityFeature: [
           "Jacuzzi privado",
