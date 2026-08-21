@@ -176,7 +176,7 @@ export const experiences: Experience[] = [
     groupType: ["grupo", "dos-familias"],
     minGuests: 19,
     maxGuests: 26,
-    oneNightPrice: 4_700_000,
+    oneNightPrice: 4_500_000,
     twoNightPrice: 5_900_000,
     additionalNightPrice: 2_600_000,
     startingAt: false,

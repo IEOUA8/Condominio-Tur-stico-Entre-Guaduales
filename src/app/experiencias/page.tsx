@@ -145,6 +145,32 @@ export default function ExperienciasPage() {
             la combinación de cabañas y se confirma con una cotización personalizada.
           </p>
 
+          <div className="mt-8 rounded-2xl border border-forest-900/10 bg-ivory-50 p-6">
+            <h3 className="flex items-center gap-2 font-display text-lg text-forest-900">
+              <Icon name="info" size={18} className="text-guadua-700" />
+              Condiciones de tarifa
+            </h3>
+            <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-forest-900/75">
+              <li>
+                <strong className="font-medium text-forest-900">Capacidad base y huéspedes adicionales:</strong>{" "}
+                las tarifas incluyen la capacidad base de cada experiencia. Se admiten huéspedes adicionales por{" "}
+                {formatCOP(100_000)} por persona, hasta el máximo permitido en cada plan.
+              </li>
+              <li>
+                <strong className="font-medium text-forest-900">Descuentos por larga estancia:</strong> 10% de
+                descuento desde 7 noches y 20% desde 30 noches.
+              </li>
+              <li>
+                <strong className="font-medium text-forest-900">Depósito / seguro de daños:</strong>{" "}
+                {formatCOP(500_000)}, devuelto al día siguiente del check-out al titular de la reserva.
+              </li>
+              <li className="text-forest-900/60">
+                El valor final se confirma al cotizar por los canales oficiales, según fechas, número de huéspedes y
+                duración de la estadía.
+              </li>
+            </ul>
+          </div>
+
           <div className="mt-10 flex flex-wrap gap-3">
             <Button href="/reservar" variant="gold" size="lg" icon="arrowRight">
               Consultar disponibilidad
