@@ -19,7 +19,7 @@ const blocks = [
     img: "/images/lugar/fogatero-jardines.jpg",
     alt: "Jardines, flores y zonas verdes que rodean el fogatero del condominio",
     title: "Naturaleza que rodea cada rincón",
-    text: "Senderos entre la guadua, jardines, un lago y amplias zonas verdes. La naturaleza no es el fondo: es parte de la experiencia, en cada mañana y cada caminata.",
+    text: "Senderos entre la naturaleza, jardines, un lago y amplias zonas verdes. La naturaleza no es el fondo: es parte de la experiencia, en cada mañana y cada caminata.",
   },
 ];
 
