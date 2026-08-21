@@ -28,9 +28,10 @@ export function Footer() {
           <div className="text-center lg:text-left">
             <BrandLockup tone="gold" size="lg" />
             <p className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-ivory-50/70 lg:mx-0">
-              Condominio turístico entre la guadua y la naturaleza.
-              Experiencias privadas para crear recuerdos inolvidables en pareja,
-              familia o con amigos.
+              Un refugio donde la naturaleza abraza el descanso y cada estancia
+              se convierte en una historia para recordar. Vive experiencias
+              únicas en pareja, en familia o con quienes hacen especial cada
+              momento.
             </p>
             {socials.length > 0 && (
               <div className="mt-5 hidden gap-3 lg:flex">
