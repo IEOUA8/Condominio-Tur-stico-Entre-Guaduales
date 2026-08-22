@@ -232,6 +232,27 @@ export default async function ExperienceDetailPage({
                   </div>
                 </div>
                 <NightCalculator exp={exp} />
+
+                <div className="rounded-2xl border border-forest-900/10 bg-ivory-50 p-5 text-sm text-forest-900/75">
+                  <p className="flex items-center gap-2 font-medium text-forest-900">
+                    <Icon name="info" size={16} className="text-guadua-700" />
+                    Condiciones de tarifa
+                  </p>
+                  <ul className="mt-2.5 space-y-2 leading-relaxed">
+                    <li>
+                      <strong className="font-medium text-forest-900">Huésped adicional:</strong>{" "}
+                      {formatCOP(100_000)} por persona sobre la capacidad base, hasta el máximo del plan.
+                    </li>
+                    <li>
+                      <strong className="font-medium text-forest-900">Larga estancia:</strong> 10% desde 7 noches ·
+                      20% desde 30 noches.
+                    </li>
+                    <li>
+                      <strong className="font-medium text-forest-900">Depósito / seguro:</strong>{" "}
+                      {formatCOP(500_000)}, devuelto al día siguiente del check-out.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </aside>
           </div>

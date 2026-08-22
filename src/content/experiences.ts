@@ -74,7 +74,7 @@ export const experiences: Experience[] = [
   },
   {
     slug: "familiar",
-    name: "Experiencia Guacharaca/Barranquero",
+    name: "Experiencia Barranquero/Guacharaca",
     concept: "Comodidad y descanso para compartir en familia",
     groupLabel: "Plan Familiar",
     groupType: ["familia"],
